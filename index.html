@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>নিরাপদ কুরিয়ার | Nirapad Courier – ৬৪ জেলায় নিরাপদ ডেলিভারি</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+:root{--g:#0a7a2f;--gd:#065c22;--gl:#e8f5ec;--r:#e31e24;--rl:#fdecec;--tx:#1d2420;--mu:#5f6b64;--bd:#e3e8e5;--bg:#f6f8f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hind Siliguri',sans-serif;color:var(--tx);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+button,input,select,textarea{font-family:inherit;font-size:15px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;border:none;cursor:pointer;font-weight:600;transition:.2s}
+.btn-g{background:var(--g);color:#fff}.btn-g:hover{background:var(--gd)}
+.btn-r{background:var(--r);color:#fff}.btn-r:hover{background:#c0161b}
+.btn-o{background:#fff;color:var(--g);border:1.5px solid var(--g)}.btn-o:hover{background:var(--gl)}
+input,select,textarea{width:100%;padding:11px 14px;border:1.5px solid var(--bd);border-radius:10px;background:#fff;outline:none;transition:.2s}
+input:focus,select:focus,textarea:focus{border-color:var(--g)}
+label{display:block;font-size:14px;color:var(--mu);margin:12px 0 5px;font-weight:500}
+.err{color:var(--r);font-size:14px;margin-top:8px;min-height:20px}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--bd);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{height:52px}
+.logo .fb{width:46px;height:46px;border-radius:10px;background:var(--g);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700}
+.logo b{font-size:20px;line-height:1.1}.logo b span{color:var(--r)}
+.logo small{display:block;font-size:12px;color:var(--mu)}
+.menu{display:flex;gap:26px;align-items:center;font-weight:500}
+.menu a:hover{color:var(--g)}
+.burger{display:none;background:none;border:none;font-size:28px;cursor:pointer}
+.hero{background:linear-gradient(135deg,var(--gl) 0%,#fff 60%);padding:70px 0}
+.hero-g{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--rl);color:var(--r);padding:5px 14px;border-radius:20px;font-size:14px;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:46px;line-height:1.25;margin-bottom:16px}.hero h1 span{color:var(--g)}
+.hero p.lead{font-size:18px;color:var(--mu);margin-bottom:26px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:26px;box-shadow:0 10px 30px rgba(10,122,47,.06)}
+.track-box{display:flex;gap:10px}
+.stats{display:flex;gap:30px;margin-top:30px}
+.stats b{font-size:28px;color:var(--g);display:block}.stats span{color:var(--mu);font-size:14px}
+section{padding:80px 0}
+.sec-h{text-align:center;margin-bottom:46px}
+.sec-h h2{font-size:34px;margin-bottom:8px}.sec-h p{color:var(--mu);font-size:17px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.svc{padding:28px;border:1px solid var(--bd);border-radius:16px;transition:.25s}
+.svc:hover{border-color:var(--g);transform:translateY(-4px)}
+.svc i{font-size:34px;color:var(--g);background:var(--gl);width:62px;height:62px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.svc h3{font-size:20px;margin-bottom:6px}.svc p{color:var(--mu)}
+.bg-soft{background:var(--bg)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{text-align:center;padding:20px}
+.step .n{width:56px;height:56px;border-radius:50%;background:var(--g);color:#fff;font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.price-g{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:start}
+.rate{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border:1px solid var(--bd);border-radius:12px;margin-bottom:12px;background:#fff}
+.rate b{font-size:26px;color:var(--g)}
+.fee-out{background:var(--gl);border-radius:12px;padding:18px;margin-top:16px;display:flex;justify-content:space-between;align-items:center}
+.fee-out b{font-size:30px;color:var(--g)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.divs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.div-c{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:20px}
+.div-c h4{font-size:18px;color:var(--g);margin-bottom:8px;display:flex;justify-content:space-between}
+.div-c h4 span{font-size:13px;background:var(--gl);padding:2px 10px;border-radius:20px}
+.div-c p{color:var(--mu);font-size:14px}
+.pill{display:inline-block;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600}
+.tl{margin-top:20px;border-top:1px solid var(--bd);padding-top:18px}
+.tl-i{display:flex;gap:14px}
+.tl-d{display:flex;flex-direction:column;align-items:center}
+.tl-d .c{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px}
+.tl-d .l{width:2px;height:30px}
+.ok-box{background:var(--gl);color:var(--gd);border-radius:12px;padding:16px;margin-top:16px}
+.contact-g{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.ci{display:flex;gap:14px;margin-bottom:20px}
+.ci i{font-size:24px;color:var(--g);background:var(--gl);width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+footer{background:#0d2015;color:#c9d6ce;padding:50px 0 20px}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px;margin-bottom:30px}
+footer h4{color:#fff;margin-bottom:12px}footer a{display:block;margin-bottom:6px}footer a:hover{color:#fff}
+.copy{border-top:1px solid #234030;padding-top:18px;text-align:center;font-size:14px}
+#admin{display:none;background:var(--bg);min-height:100vh;padding:30px 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:22px}
+.kpi{background:#fff;border-radius:14px;padding:20px;border:1px solid var(--bd)}
+.kpi span{color:var(--mu);font-size:14px}.kpi b{display:block;font-size:28px}
+.tbl-w{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:760px}
+th,td{padding:12px 10px;text-align:left;border-bottom:1px solid var(--bd)}
+th{color:var(--mu);font-weight:500;background:var(--bg)}
+.sm{padding:6px 12px;font-size:13px;border-radius:8px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:100;align-items:center;justify-content:center;padding:20px}
+.modal .card{max-width:400px;width:100%}
+.toast{position:fixed;bottom:24px;right:24px;background:var(--g);color:#fff;padding:14px 20px;border-radius:10px;display:none;z-index:200}
+@media(max-width:900px){
+.hero-g,.price-g,.contact-g,.ft{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr 1fr}
+.hero h1{font-size:34px}
+.menu{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid var(--bd)}
+.menu.open{display:flex}.burger{display:block}
+}
+@media(max-width:520px){.f2,.steps{grid-template-columns:1fr}.track-box{flex-direction:column}.stats{gap:18px}}
+</style>
+</head>
+<body>
+
+<div id="site">
+<header><div class="wrap nav">
+  <a href="#home" class="logo">
+    <img src="logo.png" alt="Nirapad Courier" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="fb" style="display:none">N</div>
+    <div><b>Nirapad <span>Courier</span></b><small>নিরাপদ কুরিয়ার</small></div>
+  </a>
+  <nav class="menu" id="menu">
+    <a href="#home">হোম</a><a href="#services">সেবাসমূহ</a><a href="#pricing">চার্জ</a>
+    <a href="#coverage">কভারেজ</a><a href="#book">পার্সেল বুক</a><a href="#contact">যোগাযোগ</a>
+    <button class="btn btn-g sm" onclick="openLogin()"><i class="ti ti-lock"></i> অ্যাডমিন</button>
+  </nav>
+  <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')"><i class="ti ti-menu-2"></i></button>
+</div></header>
+
+<section class="hero" id="home"><div class="wrap hero-g">
+  <div>
+    <span class="tag"><i class="ti ti-truck-delivery"></i> সারা বাংলাদেশে ডেলিভারি</span>
+    <h1>আপনার পার্সেল পৌঁছাবে <span>নিরাপদে</span>, সময়মতো</h1>
+    <p class="lead">৬৪ জেলায় হোম ডেলিভারি, ক্যাশ অন ডেলিভারি আর রিয়েল-টাইম ট্র্যাকিং। অনলাইন ব্যবসা থেকে ব্যক্তিগত পার্সেল, সব এক জায়গায়।</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="#book" class="btn btn-r"><i class="ti ti-package"></i> পার্সেল বুক করুন</a>
+      <a href="#pricing" class="btn btn-o"><i class="ti ti-calculator"></i> চার্জ দেখুন</a>
+    </div>
+    <div class="stats">
+      <div><b>৬৪</b><span>জেলায় কভারেজ</span></div>
+      <div><b>২৪ ঘণ্টা</b><span>সিটি ডেলিভারি</span></div>
+      <div><b>১০০%</b><span>COD নিরাপত্তা</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3 style="font-size:22px;margin-bottom:4px"><i class="ti ti-map-search" style="color:var(--g)"></i> পার্সেল ট্র্যাক করুন</h3>
+    <p style="color:var(--mu);font-size:14px;margin-bottom:14px">ডেমো আইডি: NPC-1001, NPC-1002, NPC-1003</p>
+    <div class="track-box">
+      <input id="tId" placeholder="ট্র্যাকিং আইডি লিখুন (NPC-1001)">
+      <button class="btn btn-g" onclick="track()"><i class="ti ti-search"></i> খুঁজুন</button>
+    </div>
+    <div class="err" id="tErr"></div>
+    <div id="tOut"></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="sec-h"><h2>আমাদের সেবাসমূহ</h2><p>ব্যবসা আর ব্যক্তিগত প্রয়োজনে সম্পূর্ণ কুরিয়ার সমাধান</p></div>
+  <div class="grid3">
+    <div class="svc"><i class="ti ti-home-2"></i><h3>হোম ডেলিভারি</h3><p>দেশের যেকোনো জেলায় প্রাপকের দরজায় পার্সেল পৌঁছে দিই।</p></div>
+    <div class="svc"><i class="ti ti-cash"></i><h3>ক্যাশ অন ডেলিভারি</h3><p>পণ্যের টাকা সংগ্রহ করে দ্রুত bKash, Nagad বা ব্যাংকে পাঠিয়ে দিই।</p></div>
+    <div class="svc"><i class="ti ti-building-store"></i><h3>ই-কমার্স মার্চেন্ট সেবা</h3><p>অনলাইন শপের জন্য ফ্রি পিকআপ, বাল্ক বুকিং ও বিশেষ রেট।</p></div>
+    <div class="svc"><i class="ti ti-bolt"></i><h3>এক্সপ্রেস ডেলিভারি</h3><p>সিটির ভেতরে একই দিনে বা ২৪ ঘণ্টার মধ্যে ডেলিভারি।</p></div>
+    <div class="svc"><i class="ti ti-file-text"></i><h3>ডকুমেন্ট ডেলিভারি</h3><p>গুরুত্বপূর্ণ কাগজপত্র নিরাপদ ও গোপনীয়ভাবে পৌঁছে দিই।</p></div>
+    <div class="svc"><i class="ti ti-device-mobile-message"></i><h3>SMS আপডেট</h3><p>পার্সেলের প্রতিটি ধাপে প্রাপক ও প্রেরক SMS পাবেন।</p></div>
+  </div>
+</div></section>
+
+<section class="bg-soft"><div class="wrap">
+  <div class="sec-h"><h2>কীভাবে কাজ করে</h2><p>মাত্র চার ধাপে আপনার পার্সেল পৌঁছে যাবে</p></div>
+  <div class="steps">
+    <div class="step"><div class="n">১</div><h3>বুকিং দিন</h3><p style="color:var(--mu)">অনলাইনে বা ফোনে পার্সেল বুক করুন</p></div>
+    <div class="step"><div class="n">২</div><h3>পিকআপ</h3><p style="color:var(--mu)">রাইডার আপনার ঠিকানা থেকে পার্সেল নেবে</p></div>
+    <div class="step"><div class="n">৩</div><h3>ট্রানজিট</h3><p style="color:var(--mu)">হাব হয়ে গন্তব্য জেলায় পৌঁছাবে</p></div>
+    <div class="step"><div class="n">৪</div><h3>ডেলিভারি</h3><p style="color:var(--mu)">প্রাপকের হাতে নিরাপদে পৌঁছে যাবে</p></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <div class="sec-h"><h2>ডেলিভারি চার্জ</h2><p>স্বচ্ছ রেট, কোনো লুকানো খরচ নেই</p></div>
+  <div class="price-g">
+    <div>
+      <div class="rate"><div><h4>একই জেলার ভেতরে</h4><small style="color:var(--mu)">২৪ ঘণ্টায় ডেলিভারি</small></div><b>৳৬০</b></div>
+      <div class="rate"><div><h4>একই বিভাগে</h4><small style="color:var(--mu)">২৪–৪৮ ঘণ্টা</small></div><b>৳১০০</b></div>
+      <div class="rate"><div><h4>সারা বাংলাদেশ</h4><small style="color:var(--mu)">৪৮–৭২ ঘণ্টা</small></div><b>৳১৩০</b></div>
+      <p style="color:var(--mu);font-size:14px">* প্রথম ১ কেজির পর প্রতি কেজিতে ৳২০ অতিরিক্ত। COD চার্জ ১%।</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-bottom:6px"><i class="ti ti-calculator" style="color:var(--g)"></i> চার্জ ক্যালকুলেটর</h3>
+      <div class="f2">
+        <div><label>কোথা থেকে</label><select id="cFrom" class="dist"></select></div>
+        <div><label>কোথায়</label><select id="cTo" class="dist"></select></div>
+        <div><label>ওজন (কেজি)</label><input id="cW" type="number" min="0.5" step="0.5" value="1"></div>
+        <div><label>COD পরিমাণ (৳)</label><input id="cCod" type="number" min="0" value="0"></div>
+      </div>
+      <div class="fee-out"><span>মোট ডেলিভারি চার্জ</span><b id="cOut">৳০</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="coverage" class="bg-soft"><div class="wrap">
+  <div class="sec-h"><h2>৮ বিভাগ, ৬৪ জেলায় কভারেজ</h2><p>দেশের প্রতিটি জেলায় আমাদের ডেলিভারি নেটওয়ার্ক</p></div>
+  <div class="divs" id="divs"></div>
+</div></section>
+
+<section id="book"><div class="wrap" style="max-width:820px">
+  <div class="sec-h"><h2>পার্সেল বুক করুন</h2><p>তথ্য দিন, আমাদের রাইডার পিকআপে চলে আসবে</p></div>
+  <div class="card">
+    <h3 style="color:var(--g)">প্রেরকের তথ্য</h3>
+    <div class="f2">
+      <div><label>প্রেরকের নাম / শপের নাম</label><input id="sName" placeholder="আপনার নাম"></div>
+      <div><label>প্রেরকের মোবাইল</label><input id="sPh" placeholder="01XXXXXXXXX"></div>
+      <div><label>পিকআপ জেলা</label><select id="bFrom" class="dist"></select></div>
+      <div><label>পিকআপ ঠিকানা</label><input id="sAddr" placeholder="পিকআপের ঠিকানা"></div>
+    </div>
+    <h3 style="color:var(--g);margin-top:22px">প্রাপকের তথ্য</h3>
+    <div class="f2">
+      <div><label>প্রাপকের নাম</label><input id="rName" placeholder="প্রাপকের নাম"></div>
+      <div><label>প্রাপকের মোবাইল</label><input id="rPh" placeholder="01XXXXXXXXX"></div>
+      <div><label>ডেলিভারি জেলা</label><select id="bTo" class="dist"></select></div>
+      <div><label>ডেলিভারি ঠিকানা</label><input id="rAddr" placeholder="বাড়ি, রোড, এলাকা"></div>
+    </div>
+    <h3 style="color:var(--g);margin-top:22px">পার্সেলের তথ্য</h3>
+    <div class="f2">
+      <div><label>ওজন (কেজি)</label><input id="bW" type="number" min="0.5" step="0.5" value="1"></div>
+      <div><label>COD পরিমাণ (৳)</label><input id="bCod" type="number" min="0" value="0"></div>
+    </div>
+    <label>বিশেষ নির্দেশনা (ঐচ্ছিক)</label><textarea id="bNote" rows="2" placeholder="যেমন: ভঙ্গুর পণ্য, সাবধানে নেবেন"></textarea>
+    <div class="fee-out"><span>ডেলিভারি চার্জ</span><b id="bFee">৳০</b></div>
+    <div class="err" id="bErr"></div>
+    <button class="btn btn-r" style="width:100%;justify-content:center;margin-top:6px" onclick="book()"><i class="ti ti-circle-check"></i> বুকিং কনফার্ম করুন</button>
+    <div id="bOk"></div>
+  </div>
+</div></section>
+
+<section id="contact" class="bg-soft"><div class="wrap">
+  <div class="sec-h"><h2>যোগাযোগ করুন</h2><p>যেকোনো প্রশ্নে আমরা আছি</p></div>
+  <div class="contact-g">
+    <div>
+      <div class="ci"><i class="ti ti-phone"></i><div><h4>হটলাইন</h4><p style="color:var(--mu)">০৯৬XX-XXXXXX (সকাল ৯টা – রাত ৯টা)</p></div></div>
+      <div class="ci"><i class="ti ti-mail"></i><div><h4>ইমেইল</h4><p style="color:var(--mu)">info@nirapadcourier.com</p></div></div>
+      <div class="ci"><i class="ti ti-map-pin"></i><div><h4>প্রধান কার্যালয়</h4><p style="color:var(--mu)">ঠিকানা এখানে বসবে</p></div></div>
+    </div>
+    <div class="card">
+      <label style="margin-top:0">আপনার নাম</label><input id="mName">
+      <label>মোবাইল</label><input id="mPh">
+      <label>বার্তা</label><textarea id="mMsg" rows="3"></textarea>
+      <div class="err" id="mErr"></div>
+      <button class="btn btn-g" onclick="sendMsg()"><i class="ti ti-send"></i> বার্তা পাঠান</button>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="ft">
+    <div><h4>Nirapad Courier</h4><p>নিরাপদ কুরিয়ার: বাংলাদেশের ৬৪ জেলায় দ্রুত, নিরাপদ ও বিশ্বস্ত পার্সেল ডেলিভারি সেবা।</p></div>
+    <div><h4>দ্রুত লিংক</h4><a href="#services">সেবাসমূহ</a><a href="#pricing">চার্জ</a><a href="#book">পার্সেল বুক</a></div>
+    <div><h4>সাপোর্ট</h4><a href="#home">ট্র্যাকিং</a><a href="#contact">যোগাযোগ</a><a href="#coverage">কভারেজ এরিয়া</a></div>
+  </div>
+  <div class="copy">© ২০২৬ Nirapad Courier। সর্বস্বত্ব সংরক্ষিত।</div>
+</div></footer>
+</div>
+
+<div id="admin"><div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px">
+    <div><h2 style="font-size:28px">অ্যাডমিন ড্যাশবোর্ড</h2><p style="color:var(--mu)">সব পার্সেল ও ডেলিভারি পরিচালনা করুন</p></div>
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-o sm" onclick="resetData()"><i class="ti ti-refresh"></i> ডেমো ডেটা রিসেট</button>
+      <button class="btn btn-r sm" onclick="logout()"><i class="ti ti-logout"></i> লগআউট</button>
+    </div>
+  </div>
+  <div class="kpis" id="kpis"></div>
+  <div class="card">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+      <input id="aQ" placeholder="আইডি, নাম বা মোবাইল দিয়ে খুঁজুন" style="flex:2;min-width:200px" oninput="renderAdmin()">
+      <select id="aF" style="flex:1;min-width:160px" onchange="renderAdmin()"><option value="">সব স্ট্যাটাস</option></select>
+    </div>
+    <div class="tbl-w"><table>
+      <thead><tr><th>আইডি</th><th>প্রাপক</th><th>মোবাইল</th><th>রুট</th><th>COD</th><th>চার্জ</th><th>স্ট্যাটাস</th><th>অ্যাকশন</th></tr></thead>
+      <tbody id="aBody"></tbody>
+    </table></div>
+  </div>
+</div></div>
+
+<div class="modal" id="loginM"><div class="card">
+  <h3 style="margin-bottom:4px">অ্যাডমিন লগইন</h3>
+  <p style="color:var(--mu);font-size:14px">ডেমো: ইউজার <b>admin</b>, পাসওয়ার্ড <b>admin123</b></p>
+  <label>ইউজারনেম</label><input id="lU">
+  <label>পাসওয়ার্ড</label><input id="lP" type="password">
+  <div class="err" id="lErr"></div>
+  <div style="display:flex;gap:10px"><button class="btn btn-g" onclick="login()">লগইন</button><button class="btn btn-o" onclick="closeLogin()">বাতিল</button></div>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const D={"ঢাকা":["ঢাকা","গাজীপুর","নারায়ণগঞ্জ","নরসিংদী","মানিকগঞ্জ","মুন্সিগঞ্জ","টাঙ্গাইল","কিশোরগঞ্জ","ফরিদপুর","রাজবাড়ী","মাদারীপুর","গোপালগঞ্জ","শরীয়তপুর"],"চট্টগ্রাম":["চট্টগ্রাম","কক্সবাজার","কুমিল্লা","ফেনী","নোয়াখালী","লক্ষ্মীপুর","চাঁদপুর","ব্রাহ্মণবাড়িয়া","রাঙ্গামাটি","খাগড়াছড়ি","বান্দরবান"],"রাজশাহী":["রাজশাহী","নাটোর","নওগাঁ","চাঁপাইনবাবগঞ্জ","পাবনা","সিরাজগঞ্জ","বগুড়া","জয়পুরহাট"],"খুলনা":["খুলনা","যশোর","সাতক্ষীরা","বাগেরহাট","নড়াইল","মাগুরা","ঝিনাইদহ","কুষ্টিয়া","চুয়াডাঙ্গা","মেহেরপুর"],"বরিশাল":["বরিশাল","পটুয়াখালী","ভোলা","পিরোজপুর","বরগুনা","ঝালকাঠি"],"সিলেট":["সিলেট","মৌলভীবাজার","হবিগঞ্জ","সুনামগঞ্জ"],"রংপুর":["রংপুর","দিনাজপুর","ঠাকুরগাঁও","পঞ্চগড়","নীলফামারী","লালমনিরহাট","কুড়িগ্রাম","গাইবান্ধা"],"ময়মনসিংহ":["ময়মনসিংহ","জামালপুর","শেরপুর","নেত্রকোনা"]};
+const divOf={};Object.keys(D).forEach(k=>D[k].forEach(z=>divOf[z]=k));
+const ST=["বুক হয়েছে","পিকআপ সম্পন্ন","হাবে পৌঁছেছে","ডেলিভারির পথে","ডেলিভারি সম্পন্ন","বাতিল"];
+const SC=[["#e6f1fb","#0c447c"],["#faeeda","#633806"],["#eeedfe","#3c3489"],["#faece7","#712b13"],["#e8f5ec","#065c22"],["#fdecec","#a3171b"]];
+const $=id=>document.getElementById(id);
+const bn=n=>String(n).replace(/\d/g,d=>"০১২৩৪৫৬৭৮৯"[d]);
+const money=n=>"৳"+bn(Math.round(n).toLocaleString("en-IN"));
+const stamp=()=>{const d=new Date();return bn(d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear()+", "+d.getHours()+":"+String(d.getMinutes()).padStart(2,"0"))};
+const SEED=[
+ {id:"NPC-1001",rName:"রহিম উদ্দিন",rPh:"01712345678",from:"ঢাকা",to:"চট্টগ্রাম",cod:1500,fee:145,s:3,t:["১০/১০/২০২৬, ১০:১৫","১০/১০/২০২৬, ১৪:৪০","১১/১০/২০২৬, ০৭:১০","১১/১০/২০২৬, ১১:০৫"]},
+ {id:"NPC-1002",rName:"ফাতেমা বেগম",rPh:"01898765432",from:"চট্টগ্রাম",to:"সিলেট",cod:2200,fee:152,s:2,t:["১০/১০/২০২৬, ১২:০০","১০/১০/২০২৬, ১৬:২০","১১/১০/২০২৬, ০৯:৩০"]},
+ {id:"NPC-1003",rName:"করিম হোসেন",rPh:"01611223344",from:"চট্টগ্রাম",to:"চট্টগ্রাম",cod:0,fee:60,s:4,t:["০৯/১০/২০২৬, ০৯:০০","০৯/১০/২০২৬, ১১:০০","০৯/১০/২০২৬, ১৩:০০","০৯/১০/২০২৬, ১৫:০০","০৯/১০/২০২৬, ১৭:৪৫"]}];
+let P=JSON.parse(localStorage.getItem("npc_parcels")||"null")||JSON.parse(JSON.stringify(SEED));
+const save=()=>localStorage.setItem("npc_parcels",JSON.stringify(P));
+const nextId=()=>"NPC-"+(Math.max(...P.map(p=>+p.id.split("-")[1]),1000)+1);
+
+function fee(f,t,w,c){let b=f===t?60:divOf[f]===divOf[t]?100:130;b+=Math.max(0,Math.ceil(w||1)-1)*20;return Math.round(b+(c||0)*0.01)}
+const pill=s=>`<span class="pill" style="background:${SC[s][0]};color:${SC[s][1]}">${ST[s]}</span>`;
+function toast(m){const t=$("toast");t.textContent=m;t.style.display="block";setTimeout(()=>t.style.display="none",2500)}
+
+const opts=Object.keys(D).map(k=>`<optgroup label="${k} বিভাগ">${D[k].map(z=>`<option>${z}</option>`).join("")}</optgroup>`).join("");
+document.querySelectorAll(".dist").forEach(s=>s.innerHTML=opts);
+$("cFrom").value=$("bFrom").value="চট্টগ্রাম";$("cTo").value=$("bTo").value="ঢাকা";
+const calc=()=>$("cOut").textContent=money(fee($("cFrom").value,$("cTo").value,+$("cW").value,+$("cCod").value));
+const calcB=()=>$("bFee").textContent=money(fee($("bFrom").value,$("bTo").value,+$("bW").value,+$("bCod").value));
+["cFrom","cTo","cW","cCod"].forEach(i=>$(i).addEventListener("input",calc));
+["bFrom","bTo","bW","bCod"].forEach(i=>$(i).addEventListener("input",calcB));
+calc();calcB();
+
+$("divs").innerHTML=Object.keys(D).map(k=>`<div class="div-c"><h4>${k} বিভাগ <span>${bn(D[k].length)} জেলা</span></h4><p>${D[k].join(" • ")}</p></div>`).join("");
+
+function track(){
+ const id=$("tId").value.trim().toUpperCase();$("tErr").textContent="";$("tOut").innerHTML="";
+ if(!id)return $("tErr").textContent="একটি ট্র্যাকিং আইডি লিখুন";
+ const p=P.find(x=>x.id===id);
+ if(!p)return $("tErr").textContent="এই আইডিতে কোনো পার্সেল পাওয়া যায়নি। আইডি আবার চেক করুন।";
+ let h=`<div class="tl"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px"><b>${p.id} · ${p.from} → ${p.to}</b>${pill(p.s)}</div>`;
+ if(p.s===5){$("tOut").innerHTML=h+`<p style="color:var(--r)">এই পার্সেলটি বাতিল করা হয়েছে।</p></div>`;return}
+ ST.slice(0,5).forEach((s,i)=>{const d=i<=p.s;
+  h+=`<div class="tl-i"><div class="tl-d"><div class="c" style="${d?"background:var(--g);color:#fff":"border:1.5px solid var(--bd);color:#aaa"}"><i class="ti ti-${d?"check":"circle"}"></i></div>${i<4?`<div class="l" style="background:${i<p.s?"var(--g)":"var(--bd)"}"></div>`:""}</div><div><b style="color:${d?"var(--tx)":"#aaa"}">${s}</b><div style="font-size:13px;color:var(--mu)">${d?(p.t[i]||""):""}</div></div></div>`});
+ $("tOut").innerHTML=h+"</div>";
+}
+$("tId").addEventListener("keydown",e=>{if(e.key==="Enter")track()});
+$("tId").addEventListener("input",()=>$("tErr").textContent="");
+
+const phOk=v=>/^01[3-9]\d{8}$/.test(v);
+function book(){
+ const v=i=>$(i).value.trim();$("bErr").textContent="";$("bOk").innerHTML="";
+ const checks=[[v("sName"),"প্রেরকের নাম লিখুন"],[phOk(v("sPh")),"প্রেরকের সঠিক ১১ সংখ্যার মোবাইল নম্বর দিন"],[v("sAddr"),"পিকআপ ঠিকানা লিখুন"],[v("rName"),"প্রাপকের নাম লিখুন"],[phOk(v("rPh")),"প্রাপকের সঠিক ১১ সংখ্যার মোবাইল নম্বর দিন"],[v("rAddr"),"ডেলিভারি ঠিকানা লিখুন"]];
+ for(const [ok,msg] of checks) if(!ok) return $("bErr").textContent=msg;
+ const p={id:nextId(),sName:v("sName"),sPh:v("sPh"),rName:v("rName"),rPh:v("rPh"),rAddr:v("rAddr"),from:$("bFrom").value,to:$("bTo").value,cod:+$("bCod").value||0,fee:fee($("bFrom").value,$("bTo").value,+$("bW").value,+$("bCod").value),s:0,t:[stamp()]};
+ P.unshift(p);save();
+ $("bOk").innerHTML=`<div class="ok-box"><b><i class="ti ti-circle-check"></i> বুকিং সফল হয়েছে!</b><br>ট্র্যাকিং আইডি: <b>${p.id}</b> · ডেলিভারি চার্জ: ${money(p.fee)}<br><small>আমাদের রাইডার শীঘ্রই পিকআপের জন্য যোগাযোগ করবে।</small></div>`;
+ ["sName","sPh","sAddr","rName","rPh","rAddr","bNote"].forEach(i=>$(i).value="");
+}
+document.querySelectorAll("#book input").forEach(i=>i.addEventListener("input",()=>$("bErr").textContent=""));
+
+function sendMsg(){
+ if(!$("mName").value.trim()||!phOk($("mPh").value.trim())||!$("mMsg").value.trim())return $("mErr").textContent="নাম, সঠিক মোবাইল নম্বর ও বার্তা লিখুন";
+ $("mErr").textContent="";["mName","mPh","mMsg"].forEach(i=>$(i).value="");toast("আপনার বার্তা পাঠানো হয়েছে");
+}
+
+function openLogin(){$("loginM").style.display="flex";$("menu").classList.remove("open")}
+function closeLogin(){$("loginM").style.display="none";$("lErr").textContent=""}
+function login(){
+ if($("lU").value==="admin"&&$("lP").value==="admin123"){closeLogin();sessionStorage.setItem("npc_admin","1");showAdmin()}
+ else $("lErr").textContent="ইউজারনেম বা পাসওয়ার্ড ভুল";
+}
+function showAdmin(){$("site").style.display="none";$("admin").style.display="block";window.scrollTo(0,0);renderAdmin()}
+function logout(){sessionStorage.removeItem("npc_admin");$("admin").style.display="none";$("site").style.display="block"}
+function resetData(){if(confirm("সব ডেটা মুছে ডেমো ডেটা ফিরিয়ে আনবেন?")){P=JSON.parse(JSON.stringify(SEED));save();renderAdmin();toast("ডেমো ডেটা রিসেট হয়েছে")}}
+$("aF").innerHTML+=ST.map((s,i)=>`<option value="${i}">${s}</option>`).join("");
+
+function renderAdmin(){
+ const del=P.filter(p=>p.s===4),act=P.filter(p=>p.s<4);
+ const k=[["মোট পার্সেল",bn(P.length),"ti-package","var(--g)"],["চলমান",bn(act.length),"ti-truck","#c27a0a"],["ডেলিভারি সম্পন্ন",bn(del.length),"ti-circle-check","var(--g)"],["মোট আয়",money(P.filter(p=>p.s!==5).reduce((a,p)=>a+p.fee,0)),"ti-coin","var(--g)"],["COD সংগ্রহ",money(del.reduce((a,p)=>a+p.cod,0)),"ti-cash","var(--r)"]];
+ $("kpis").innerHTML=k.map(x=>`<div class="kpi"><span><i class="ti ${x[2]}" style="color:${x[3]}"></i> ${x[0]}</span><b>${x[1]}</b></div>`).join("");
+ const q=$("aQ").value.trim().toLowerCase(),f=$("aF").value;
+ const rows=P.filter(p=>(f===""||p.s==f)&&(!q||(p.id+p.rName+p.rPh).toLowerCase().includes(q)));
+ $("aBody").innerHTML=rows.length?rows.map(p=>`<tr><td><b>${p.id}</b></td><td>${p.rName}</td><td>${p.rPh}</td><td>${p.from} → ${p.to}</td><td>${money(p.cod)}</td><td>${money(p.fee)}</td><td>${pill(p.s)}</td><td style="white-space:nowrap">${p.s<4?`<button class="btn btn-g sm" onclick="adv('${p.id}')">পরের ধাপ</button> <button class="btn btn-o sm" style="color:var(--r);border-color:var(--r)" onclick="cancelP('${p.id}')">বাতিল</button>`:"—"}</td></tr>`).join(""):`<tr><td colspan="8" style="text-align:center;color:var(--mu);padding:30px">কোনো পার্সেল পাওয়া যায়নি</td></tr>`;
+}
+function adv(id){const p=P.find(x=>x.id===id);p.s++;p.t[p.s]=stamp();save();renderAdmin();toast(`${id}: ${ST[p.s]}`)}
+function cancelP(id){if(confirm(id+" বাতিল করবেন?")){P.find(x=>x.id===id).s=5;save();renderAdmin()}}
+if(sessionStorage.getItem("npc_admin"))showAdmin();
+</script>
+</body>
+</html>
